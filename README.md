@@ -26,23 +26,16 @@ The following configuration steps are performed automatically:
 
 ## Fetch files
 ```
-$ git clone https://github.com/MISP/misp-docker
+$ git clone https://github.com/mahsimajalooli/misp.git
 $ cd misp-docker
 # Copy template.env to .env (on the root directory) and edit the environment variables at .env file
 $ cp template.env .env
 $ vi .env
 ```
 
-## Build the containers
-```
-$ docker-compose build
-or
-$ docker-compose -f docker-compose.yml build
-```
-
 ## Run containers
 ```
-$ docker-compose up
+$ docker-compose up -d
 or
-$ docker-compose -f docker-compose.yml up
+$ docker-compose -f docker-compose.yml up -d
 ```
